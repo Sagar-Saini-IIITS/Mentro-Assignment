@@ -1,13 +1,13 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+.oddcard-greenbg{
+    background-color:#C5F8C7;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.evencard-greenbg{
+  background-color: #7ABD87;
+}
+.oddcard-greenbtn{
+    background-color: #4CAF50;
+}
+.evencard-greenbtn{
+    background-color: #609B6C;
 }
