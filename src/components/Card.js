@@ -56,14 +56,17 @@ const Card = ({img,num,MentorDetails,setNum}) => {
               ></img>
             </div>
           </div>
-          <div className="relative">
-            <div className="flex justify-between">
-              <span className="fas fa-arrow-alt-circle-down text-[#4CAF50] top-80 py-5 px-10 relative scale-150 " onClick={()=> setNum((num-1+5)%5)}></span>
+          <div className="relative w-[100%]">
+            <div className="w-[100%]">
               <img
                 src={img[num]}
-                className="w-36 relative rounded-full top-56 " alt={`${MentorDetails[num].name} img`}
+                className="w-36 relative rounded-full mx-auto top-56 " alt={`${MentorDetails[num].name} img`}
               ></img>
-              <span className="fas fa-arrow-alt-circle-down text-[#4CAF50] px-10 pr-14 py-5 top-80 relative  scale-150" onClick={()=> setNum((num+1)%5)}></span>
+              
+            </div>
+            <div className="flex justify-between">
+            <span className="fas fa-arrow-alt-circle-down text-[#4CAF50] top-40 ml-14 p-2 relative scale-150 " onClick={()=> setNum((num-1+5)%5)}></span>
+            <span className="fas fa-arrow-alt-circle-down text-[#4CAF50] top-40 mr-14 p-2 relative  scale-150" onClick={()=> setNum((num+1)%5)}></span>
             </div>
           </div>
         </div>
@@ -84,7 +87,7 @@ const Card = ({img,num,MentorDetails,setNum}) => {
           {MentorDetails[num].name}
         </span>
       </div>
-      
+
     </div>
   );
 };
